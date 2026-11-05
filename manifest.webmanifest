@@ -1,0 +1,11 @@
+{
+  "name": "탁구 기록장",
+  "short_name": "탁구기록",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eaeef4",
+  "theme_color": "#17457c",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
