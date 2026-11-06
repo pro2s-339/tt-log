@@ -1,20 +1,11 @@
-// ──────────────────────────────────────────────────────────────
-// 1) Firebase 설정값을 여기에 붙여넣으세요.
-//    Firebase 콘솔 → 프로젝트 설정 → "내 앱" → SDK 설정 및 구성 → 구성
-//    projectId 가 비어 있으면 사이트는 "이 기기에만 저장" 모드로 동작합니다.
-// ──────────────────────────────────────────────────────────────
 export const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyA2XwHUyFXpbaCcViWYntymfTGATau2nU4",
+  authDomain: "tt-log.firebaseapp.com",
+  projectId: "tt-log",
+  storageBucket: "tt-log.firebasestorage.app",
+  messagingSenderId: "970107746444",
+  appId: "1:970107746444:web:7b0d6b7c3a48f5b52263a9"
 };
 
-// ──────────────────────────────────────────────────────────────
-// 2) 내 기록이 저장될 "공간 코드".
-//    PC와 폰에서 같은 코드를 쓰면 같은 기록이 보입니다.
-//    남이 맞히기 어려운 8자 이상으로 바꾸세요. (영문·숫자·하이픈)
-// ──────────────────────────────────────────────────────────────
-export const DEFAULT_SPACE = "change-me-1234";
+// 아래 따옴표 안을 나만 아는 8자 이상 문자열로 바꾸세요 (영문·숫자·하이픈)
+export const DEFAULT_SPACE = "yonghyun-tt-1339";
