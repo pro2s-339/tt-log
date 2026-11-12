@@ -95,8 +95,8 @@ button{font-family:inherit;color:inherit}
 /* 달력 */
 .weekhead{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:5px}
 .weekhead span{text-align:center;font-size:.7rem;font-weight:600;color:var(--muted);letter-spacing:.08em}
-.weekhead span:first-child{color:var(--loss)} → .weekhead span:nth-child(6){color:var(--accent)}
-.weekhead span:last-child{color:var(--accent)} → .weekhead span:last-child{color:var(--loss)}
+.weekhead span:nth-child(6){color:var(--accent)}
+.weekhead span:last-child{color:var(--loss)}
 .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
 .cell{position:relative;display:flex;flex-direction:column;gap:4px;align-items:stretch;
   min-height:84px;padding:6px 5px;border:1px solid var(--line);border-radius:9px;
@@ -257,7 +257,7 @@ textarea.big{min-height:110px}
       <div class="mlabel"><span class="yr" id="mYear"></span><span id="mMonth"></span></div>
       <button class="ghost" id="todayBtn">오늘</button>
     </div>
-    <div class="weekhead"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span>
+    <div class="weekhead"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span></div>
     <div class="grid" id="calGrid"></div>
     <div class="legend" id="legend"></div>
   </section>
