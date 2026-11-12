@@ -75,7 +75,7 @@ function renderCal(){
   const y = cursor.getFullYear(), m = cursor.getMonth();
   $('mYear').textContent = y;
   $('mMonth').textContent = (m+1)+'월';
-  const startDow = new Date(y,m,1).getDay();
+  const startDow = (new Date(y,m,1).getDay() + 6) % 7;
   const dim = new Date(y,m+1,0).getDate();
   const cells = Math.ceil((startDow+dim)/7)*7;
   const byDate = {};
